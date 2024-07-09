@@ -1,0 +1,103 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ! Vi tri cua no
+   ! Kich thuoc cua no
+   ! Mau sac cua no
+   ! Hinh dang cua no */
+
+
+#main{
+
+}
+/* !Header begin */
+
+#header{
+    height: 46px;
+    background-color: black;
+}
+
+#nav{
+
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-decoration: none;
+    line-height:46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px;
+    padding: 0 24px;
+    display: inline-block;
+    /* width:150px; */
+
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+
+}
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(000, 000,000, 0.3) ;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 33px;
+}
+
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+    
+}
+
+#nav .subnav li{
+    display: inline-block;
+    width: 100%;
+    height: 33px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+/* !Header end */
+
+
+#slider{
+    min-height: 500px;
+    background-color: #333;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
