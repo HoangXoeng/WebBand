@@ -13,7 +13,9 @@ html {
    ! Kich thuoc cua no
    ! Mau sac cua no
    ! Hinh dang cua no */
-
+.clear {
+    clear: both;
+}
 
 #main {}
 
@@ -164,7 +166,7 @@ html {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 450;
-    letter-spacing:4px;
+    letter-spacing: 4px;
 }
 
 #content .content-section .section-sub-heading {
@@ -176,29 +178,81 @@ html {
 
 }
 
-#content .about-text{
+#content .about-text {
     padding-top: 25px;
-    line-height:1.4 ;
+    line-height: 1.4;
 }
 
-#content .member-item{
+#content .member-item {
     float: left;
-    width: 33.33333%;   
+    width: 33.33333%;
     text-align: center;
+
 }
 
-#content .member-list{
-margin-top: 48px;
+#content .member-list {
+    margin-top: 48px;
 }
-#content .member-item .member-name{
+
+#content .member-item .member-name {
     font-size: 15px;
     margin-bottom: 15px;
 }
 
-#content .member-item .member-img{
+#content .member-item .member-img {
     width: 154px;
     border-radius: 5px;
 }
+
+#content .tour-section {
+    background-color: #000;
+    height: 846px;
+}
+
+
+#content .tour-section .section-heading {
+    color: #ccc;
+}
+
+#content .tour-section .section-sub-heading {
+    color: #ccc;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 45px;
+    list-style: none;
+    color: #757575;
+
+}
+
+.tickets-list li {
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    padding: 11px 16px;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    text-align: center;
+    background-color: black;
+    padding: 2px 0 2px 0 ;
+    width: 24px;
+    display: inline-block;
+    margin-left: 650px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+
+
 
 /* content end */
 
