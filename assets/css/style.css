@@ -147,6 +147,61 @@ html {
 
 
 /* slider end */
+
+/* content begin */
 #content {}
+
+#content .content-section {
+    width: 800px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+}
+
+#content .content-section .section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 450;
+    letter-spacing:4px;
+}
+
+#content .content-section .section-sub-heading {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+
+}
+
+#content .about-text{
+    padding-top: 25px;
+    line-height:1.4 ;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.33333%;   
+    text-align: center;
+}
+
+#content .member-list{
+margin-top: 48px;
+}
+#content .member-item .member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .member-item .member-img{
+    width: 154px;
+    border-radius: 5px;
+}
+
+/* content end */
+
+
 
 #footer {}
