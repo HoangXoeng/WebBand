@@ -267,7 +267,7 @@ html {
     display: block;
 }
 
-.place-img:hover{
+.place-img:hover {
     opacity: 0.6;
 }
 
@@ -297,11 +297,11 @@ html {
     color: #fff;
     background-color: #000;
     text-decoration: none;
-    padding:11px 16px;
+    padding: 11px 16px;
     display: inline-block;
 }
 
-.place-buy-btn:hover{
+.place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
 }
@@ -320,8 +320,8 @@ html {
 
 
 
-.modal{
-    background-color: rgba(0,0,0,0.4);
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -332,59 +332,68 @@ html {
     display: none;
 }
 
-.modal-container{
+
+
+.modal-container {
     background-color: #fff;
-    width: 900px;
+    width: 750px;
     max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease 1s;
+
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     color: #fff;
     padding: 12px;
     right: 0;
 }
 
-.modal-close:hover{
+.modal-close:hover {
     cursor: pointer;
     background-color: #ccc;
     color: #000;
 }
 
-.ti-bag{
+.ti-bag {
     margin-right: 16px;
 }
 
-.modal-header{
-background-color: #009688;
-height: 130px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 30px;
-color: #fff;
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
 }
 
-.modal-body{
+.modal-body {
     padding: 16px;
 }
 
-.modal-label{
+.modal-label {
     display: block;
-    font-size: 15px; 
+    font-size: 15px;
     margin-bottom: 12px;
 }
 
-.modal-input{
+.modal-input {
     /* border: 1px solid #ccc; */
     padding: 10px;
     width: 100%;
     margin-bottom: 24px;
 }
 
-#buy-ticket{
+.modal.open {
+    display: flex;
+}
+
+
+#buy-ticket {
     background-color: #009688;
     border: none;
     width: 100%;
@@ -392,12 +401,25 @@ color: #fff;
     padding: 12px;
 }
 
-#buy-ticket:hover{
+#buy-ticket:hover {
     cursor: pointer;
     opacity: 0.5;
 }
 
-.modal-footer{
+.modal-footer {
     padding: 16px;
     text-align: right;
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
