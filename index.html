@@ -51,16 +51,16 @@
                     est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third member-item">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/Band/member/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third member-item">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/Band/member/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third member-item">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/Band/member/member1.jpg" alt="" class="member-img">
                     </div>
@@ -78,32 +78,32 @@
                         <li>October <span class="sold-out">Sold out</span></li>
                         <li>November <span class="quantity">3</span></li>
                     </ul>
-                    <div class="places-list">
-                        <div class="place-item">
+                    <div class="row places-list">
+                        <div class="col col-third" >
                             <img src="./assets/img/places/place1.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heding">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="./assets/img/places/paris.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heding">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third ">
                             <img src="./assets/img/places/sanfran.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heding">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-btn">Buy Tickets</button>
+                                <button class="btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -115,13 +115,50 @@
             <div class="content-section">
                 <h2 class="section-heading">Contact</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" required placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" required placeholder="Email" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" requiredplaceholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class = "btn mt-8 pull-right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
             </div>
-
+        <div class="img-map">
+            <img class="map" src="./assets/img/map/map.jpg" alt="">
+        </div>
 
         </div>
 
         <div id="footer">
-
+            <div class="socials">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-facebook"></i></a>
+            </div>
+            <p class="copyright">
+                power by <a href="">xoeng</a>
+            </p>
         </div>
     </div>
 

@@ -16,6 +16,42 @@ html {
 .clear {
     clear: both;
 }
+.mt-8{
+    margin-top: 8px !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 0 8px 0 8px;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-half{
+width: 50%;
+}
+.col-full{
+    width: 100%;
+    }
+
+
+.text-center{
+    text-align: center !important;
+}
+
+.pull-right{
+    float: right;
+}
 
 #main {}
 
@@ -184,10 +220,7 @@ html {
 }
 
 #content .member-item {
-    float: left;
-    width: 33.33333%;
     text-align: center;
-
 }
 
 #content .member-list {
@@ -256,11 +289,6 @@ html {
     margin-right: -8px;
 }
 
-.place-item {
-    float: left;
-    width: 33.333333%;
-    padding: 0 8px 0 8px;
-}
 
 .place-img {
     width: 100%;
@@ -293,22 +321,68 @@ html {
     margin-bottom: 15px;
 }
 
-.place-buy-btn {
+.btn {
     color: #fff;
     background-color: #000;
     text-decoration: none;
     padding: 11px 16px;
+    display: block;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.contact-content{
+    margin-top: 47px;
+}
+
+.contact-info{
+    line-height: 1.6;
+    font-size: 18px;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
     display: inline-block;
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    width: 100%;
 }
 
 
+.content-section{
+    margin-bottom: 64px;
+}
 
+.map{
+    width: 100%;
+}
 
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials{
+    font-size: 20px;
+    
+}
+#footer .socials a{
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+#footer .socials a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
 /* content end */
 
 
