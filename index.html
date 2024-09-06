@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
-<body>   
+<body>
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></ li>
                 <li>
                     <a href="">More <i class="nav-arrow-down ti-angle-down"></i></a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,7 +40,7 @@
 
         <div id="content">
             <!-- About -->
-            <div class="content-section">
+            <div id = "band" class="content-section">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -70,7 +70,7 @@
 
             <!-- Tour dates -->
             <div class="tour-section">
-                <div class="content-section">
+                <div id = "tour" class="content-section">
                     <h2 class="section-heading">Tour dates</h2>
                     <p class="section-sub-heading">Remember to book your tickets!</p>
                     <ul class="tickets-list">
@@ -79,7 +79,7 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <div class="row places-list">
-                        <div class="col col-third" >
+                        <div class="col col-third">
                             <img src="./assets/img/places/place1.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heding">New York</h3>
@@ -112,7 +112,7 @@
 
 
             <!-- Contact -->
-            <div class="content-section">
+            <div id = "contact"class="content-section">
                 <h2 class="section-heading">Contact</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 <div class="row contact-content">
@@ -136,14 +136,14 @@
                                     <input type="text" name="" requiredplaceholder="Message" id="" class="form-control">
                                 </div>
                             </div>
-                            <input class = "btn mt-8 pull-right" type="submit" value="SEND">
+                            <input class="btn mt-8 pull-right" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
             </div>
-        <div class="img-map">
-            <img class="map" src="./assets/img/map/map.jpg" alt="">
-        </div>
+            <div class="img-map">
+                <img class="map" src="./assets/img/map/map.jpg" alt="">
+            </div>
 
         </div>
 
@@ -195,7 +195,7 @@
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-btn')
         const modal = document.querySelector('.modal')
-        const closeModalBtn = document .querySelector('.js-close-modal-btn')
+        const closeModalBtn = document.querySelector('.js-close-modal-btn')
         const modalContainer = document.querySelector('.js-modal-container')
         function showBuyTicketsModal() {
             modal.classList.add('open')
@@ -209,9 +209,9 @@
             buyBtn.addEventListener('click', showBuyTicketsModal)
         }
 
-        closeModalBtn.addEventListener('click',hideBuyTicketsModal)
-        modal.addEventListener('click',hideBuyTicketsModal)
-        modalContainer.addEventListener('click',function(event){
+        closeModalBtn.addEventListener('click', hideBuyTicketsModal)
+        modal.addEventListener('click', hideBuyTicketsModal)
+        modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
 
